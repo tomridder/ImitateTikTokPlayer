@@ -1,0 +1,17 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    id 'com.android.application' version '7.4.2' apply false
+    id 'com.android.library' version '7.4.2' apply false
+}
+
+ext {
+    compileSdkVersion = 30
+    buildToolsVersion = "30.0.3"
+    supportSdkVersion = "26.1.0"
+    minSdkVersion = 19
+    targetSdkVersion = 23
+    versionCode = 1
+    versionName = "v1.0"
+    imSdk = 'com.tencent.imsdk:imsdk:4.9.1'
+    liteavSdk="com.tencent.liteav:LiteAVSDK_Player:latest.release"
+}

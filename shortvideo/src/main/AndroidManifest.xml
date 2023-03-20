@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tencent.liteav.shortvideoplayerdemo">
+    <application
+        tools:replace="android:label"
+        android:label="@string/my_app_name"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.tencent.liteav.demo.player.demo.shortvideo.base.AbsBaseActivity" />
+        <activity
+            android:name="com.tencent.liteav.demo.player.demo.shortvideo.view.ShortVideoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.tencent.liteav.action.liteavapp" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
